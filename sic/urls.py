@@ -16,6 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from sesjeiciasteczka import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+path('', views.Index.as_view()),
+path('show_session/', views.ShowSessionView.as_view()),
+path('set_session/', views.SetSessionView.as_view()),
+
 ]

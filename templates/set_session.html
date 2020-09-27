@@ -1,0 +1,12 @@
+{% extends 'Index.html' %}
+{% block content %}
+
+
+    <form method="POST">
+        {% csrf_token %}
+    <input type="text" name="sikorka">
+    <input type="submit" value="prześlij">
+
+    </form>
+
+{%  endblock %}

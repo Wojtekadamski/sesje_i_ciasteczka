@@ -1,0 +1,9 @@
+{% extends 'Index.html' %}
+{% block content %}
+
+    {% if session %}
+        {{ session }}
+    {% else %}
+        <p>sesja nie jest ustawiona</p>
+{% endif %}
+{% endblock %}
