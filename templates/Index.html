@@ -12,6 +12,28 @@
     <a href="/delete_session/">usuń zmienną sesyjną</a><br>
 
 </p>
+<p>
+
+    <a href="/set_cookie/">ustaw ciasteczko</a><br>
+    <a href="/show_cookie/">pokaz ciasteczko</a><br>
+    <a href="/delete_cookie/">usuń ciasteczko</a><br>
+
+</p>
+
+<p>
+
+    <a href="/set_sessionkeyvalue/">ustaw zmienną sesyjną po kluczu</a><br>
+    <a href="/show_sessionkeyvalue/">pokaz zmienną sesyjną po kluczu</a><br>
+    <a href="/del_sessionkeyvalue/">usuń zmienną sesyjną po kluczu</a><br>
+
+</p>
+
+<p>
+
+    zmienna sesyjna: {{ session }}
+    ciasteczko: {{ cookie }}
+
+</p>
 {% block content %}
 
 {% endblock %}

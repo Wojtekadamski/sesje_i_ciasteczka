@@ -23,5 +23,12 @@ urlpatterns = [
 path('', views.Index.as_view()),
 path('show_session/', views.ShowSessionView.as_view()),
 path('set_session/', views.SetSessionView.as_view()),
+path('delete_session/', views.DelSessionView.as_view()),
+path('set_cookie/', views.SetCookieView.as_view()),
+path('show_cookie/', views.ShowCookieView.as_view()),
+path('show_sessionkeyvalue/', views.ShowSessionKeyValue.as_view()),
+path('set_sessionkeyvalue/', views.SetSessionKeyValue.as_view()),
+path('del_sessionkeyvalue/', views.DelSessionKeyValue.as_view()),
+
 
 ]

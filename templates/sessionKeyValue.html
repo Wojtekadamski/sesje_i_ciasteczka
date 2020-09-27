@@ -1,0 +1,16 @@
+{% extends 'Index.html' %}
+{% block content %}
+
+<p>
+<form method="post">
+{% csrf_token %}
+Key:<input type="text" name="key"><br>
+Value:<input type="text" name="value">
+<input type="submit" value="submit">
+</form>
+
+</p>
+
+
+
+{% endblock %}

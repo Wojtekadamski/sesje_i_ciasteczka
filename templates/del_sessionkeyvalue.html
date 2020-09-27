@@ -1,0 +1,12 @@
+{% extends 'Index.html' %}
+{% block content %}
+
+<form method="post">
+{% csrf_token %}
+    {% for elem in session %}
+    <input type="checkbox" name="choice" value="{{ elem.0 }}"> key: {{ elem.0}}, value: {{ elem.1 }}<br>
+    {% endfor %}
+<input type="submit" value="submit">
+</form>
+
+{% endblock %}
